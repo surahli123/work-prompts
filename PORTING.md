@@ -1,4 +1,4 @@
-> Copy of [kangaroo/PORTING.md](https://github.com/surahli123/kangaroo/blob/main/PORTING.md). Its paths are in kangaroo, and that copy is the current one.
+> Copy of [kangaroo/PORTING.md](https://github.com/surahli123/kangaroo/blob/main/PORTING.md), which is current. Paths are in kangaroo.
 
 # Porting kangaroo to the work laptop
 
