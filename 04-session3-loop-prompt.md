@@ -6,7 +6,8 @@ Do this after session 2 passes. Open the work repository in plan mode and give t
 Read PORTING.md sections 4 and 7:
 https://github.com/surahli123/work-prompts/blob/main/PORTING.md
 
-1. Cards. For 3 to 5 past flights, analyze each one. Then ask me for the cause and the
+1. Cards. For 3 to 5 past flights, analyze each one with the route from session 2
+   (a scorecard export and a contract for each). Then ask me for the cause and the
    lesson of each flight. Record each one with:
    python3 bin/kangaroo cards confirm EXPERIMENT --cause "..." --lesson "..." --approver NAME
    Use only the words that I give. Do not write a cause or a lesson yourself.
