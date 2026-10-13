@@ -10,16 +10,16 @@ Use the Databricks MCP server or skill that this laptop already has.
 Change only: ~/.kangaroo/overlay/warehouse.json, one small wrapper script if the cmd
 route needs it, and CliConfig in kangaroo/sources/config.py with the place where
 analyze picks it (kangaroo/api.py). Any other change to kangaroo code needs my approval
-for that change, a test, and an entry in ~/ds-handoff/upstream.md.
+for that change, a test, and an entry in ~/ds-handoff/upstream.md (PORTING.md section 8).
 
 0. Update kangaroo and record the local changes.
    - git clone https://github.com/surahli123/kangaroo into a temporary folder, with history.
    - Make the diff from the kangaroo commit that session 1 copied to the latest commit.
      Apply it here with git apply -3. Keep the local commits. Resolve each conflict.
    - Run: python3 -m unittest discover -s tests
-   - In ~/ds-handoff/upstream.md, write one entry for each local change to kangaroo code:
-     the file and function, what it does, why real data needed it, the input shape in
-     kangaroo's names, and its test. No real names and no values.
+   - Make ~/ds-handoff/upstream.md if it does not exist, in the format of PORTING.md
+     section 8. Write one entry for each local change to kangaroo code since the copy,
+     with the changes from session 1. No real names, IDs or values.
    Show the conflicts, the test result and the entries. Stop and wait for my approval.
 1. Find the Databricks tools. List the MCP servers and tools that you can call, and the
    skills that query Databricks. For each one: its name, its input, its output, and
