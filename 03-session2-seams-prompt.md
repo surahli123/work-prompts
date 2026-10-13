@@ -32,6 +32,9 @@ for that change, a test, and an entry in ~/ds-handoff/upstream.md (PORTING.md se
    split_count_metric, cohort, prefer_cuped, prefer_sequential.
    - If T1 does not have a kangaroo column, map it to a SQL expression: a struct field,
      an array element, or NULL. Do not change kangaroo/sources/t1.py for this.
+   - If a cut template uses a value that T3 does not have, map it in "t3_values". If T3
+     does not have a column, map it to null in "t3_columns". Do not edit a template.
+   - Set "multi_arm" in "assignment" to the rule that makes a cut agree with T1.
    - Do not change "approved". I add a table to it only after the privacy decision.
    - Keep "dialect": "spark". Real names go only into that file.
 3. cmd route only: write a wrapper that reads SQL on stdin, runs it with the skill
