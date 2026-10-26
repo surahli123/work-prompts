@@ -13,9 +13,11 @@ upstream.md. Do not turn the sandbox off.
 0. Before you start:
    - If kangaroo on GitHub has commits after the one you last merged, take them with
      git apply -3, as in session 2 step 0. Run the tests.
-   - The update gives "Not made" when a primary has no bar. Where it overlaps the local
-     provisional-call change from session 1, keep kangaroo's version, and mark that
-     upstream.md entry "superseded". Run the session 2 flight again and show its calls.
+   - The update gives "Not made" when a primary has no bar, and a new report format
+     (Summary, Plan, Results, Why it moved, Data quality, Next steps, Appendix). Where it
+     overlaps a local change to the call or to the report, keep kangaroo's version, and
+     mark that upstream.md entry "superseded". Run the session 2 flight again and show
+     its calls and the line count of its report.
    Show the results. Stop and wait for my approval.
 1. Flights. List the finished flights in the approved flight scope, with aliases. I
    choose which become cards and which one is the similar flight. A card is never
