@@ -24,7 +24,8 @@ upstream.md. Do not turn the sandbox off.
    similar to itself, so the similar flight must be a different flight.
 2. Cards. Analyze each card flight from live T1, the same way as the session 2 flight:
    handoff route, CliConfig (I run the config CLI if the sandbox blocks it), a draft
-   contract for each. Then ask me for the cause and the lesson of each flight. Record:
+   contract for each. For the handoff, show me the pending files: I run them in the SQL
+   editor and save each CSV download as results/<same name>.csv. Do not run them yourself. Then ask me for the cause and the lesson of each flight. Record:
    python3 bin/kangaroo cards confirm EXPERIMENT --cause "..." --lesson "..." --approver NAME
    Use only my words and my name. Do not write a cause or a lesson yourself.
 3. Analyze the similar flight the same way. Its report must cite one confirmed card.
